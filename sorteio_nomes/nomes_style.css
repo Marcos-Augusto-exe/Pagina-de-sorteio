@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./imagens/fundo.png);
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+    font-family: 'Montserrat', monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#container{
+max-width: 490px;
+min-width: 270px;
+background-color: #57c91e;
+border-radius: 10PX;
+padding: 30px;
+text-align: center;
+margin: 0 auto;
+margin-top: 100px;
+}
+
+.h1{
+    font-size: 45px;
+    font-weight: 400;
+    color: black;
+    margin: 0 auto 20px auto;
+}
+
+#p{
+    color: black;
+    margin-top: 70px;
+    font-size: 18px;
+}
+
+#nomes{
+    width: 60%;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 2px #1b5c13;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-transform:capitalize;
+}
+
+#add{
+    width: 47px;
+    height: 47px;
+    font-size: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 2px #1b5c13;
+    padding: 6px;
+    margin-left: 10px;
+    background-color: #26851a;
+}
+#add:hover{
+    cursor: pointer;
+    background-color: #1e6d14;
+    border: solid 2px #11420b;
+}
+#iconAdd{
+    width: 100%;
+    
+}
+
+
+#content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#sortear{
+    width: 70%;
+    font-size: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 2px #1b5c13;
+    padding: 10px;
+    margin-top: 25px;
+    background-color: #26851a;
+}
+#sortear:hover{
+    cursor: pointer;
+    background-color: #1e6d14;
+    border: solid 2px #11420b;
+}
+#lista{
+    
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ListaLi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 30px;
+    font-size: 20px; 
+    font-weight: bold;
+    padding: 9px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: solid 2px #1b5c13;
+    background-color: #2c971d;
+    text-transform:capitalize;
+}
+.btnLi{
+    margin-bottom: 5px;
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+
+.abrir{
+    display: block !important;
+}
+
+#fechar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 33px;
+    font-size: 18px;
+    padding: 2px;
+    outline: none;
+    border-radius: 11px;
+    border: solid 2px #0c3106;
+    background-color: #2c991d;
+}
+#fechar:hover{
+    cursor: pointer;
+    background-color: #1e6d14;
+    border: solid 2px #11420b;
+}
+
+#janelaSorteio{
+    display:none ;
+    max-width: 430px;
+    width: 80%;
+    height: 220px;
+    background-color: #84e951;
+    background-image: url(./imagens/winner.svg);
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: multiply;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    padding: 25px;
+    
+    border-radius: 12px;
+    text-align: center;
+    z-index: 200;
+}
+
+#fundo{
+    display:none ;
+    position: fixed;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#display {
+    text-transform:capitalize;
+    font-size: 70px;
+}
+
+#novoSorteio{
+    width: 300px;
+    font-size: 25px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: solid 2px #0c3106;
+    background-color: #2c991d;
+}
+#novoSorteio:hover{
+    cursor: pointer;
+    background-color: #1e6d14;
+    border: solid 2px #11420b;
+}
+
+.p{
+    margin-top: 0;
+    margin-bottom: px;
+    font-size: 30px;
+}

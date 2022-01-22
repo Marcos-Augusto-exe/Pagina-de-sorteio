@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./numeros_style.css">
+    <link rel="icon" href="./imagen/trevo_icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&amp;family=Montserrat:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+    <title>Números da Sorte</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 class="h1">Números da Sorte</h1>
+        <h2 class="h2">Gerador de numéros para sorteios</h2>
+        <div id="sorteio">
+            <p class="p">Insira quantos números tem seu sorteio</p>
+            <input id="numero" type="number" placeholder="Exemplo: 30">
+            <button id="sortear">Sortear</button>
+        </div>
+    </div>
+
+    <div id="janelaSorteio">
+
+        <h2>O número sorteado foi</h2>
+        <h1 id="display"></h1>
+        <button id="novoSorteio">Sortear novamente</button>
+        <button id="fechar">X</button>
+    </div>
+
+
+    <div id="fundo"></div>
+
+
+
+    <script src="./numeros_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', monospace;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#container{
+    max-width: 490px;
+    min-width: 270px;
+    background-color: #57c91ead;
+    border-radius: 10PX;
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15%;
+    
+    
+}
+.p{
+    font-size: 2rem;
+}
+
+#tbnEscolhas{
+    height: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+.tbnSorteio{
+    width: 170px;
+    height: 60px;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid 2px #061f02;
+    background-color: #2c991d;
+    cursor: pointer;
+    
+}
+.tbnSorteio:hover{
+    border: solid 2px #282928;
+    color:#282928 ;
+}
+
+#iniciar{
+    height: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end ;
+   
+}
+
+#btniniciar{
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: solid 2px #57c91e;
+    color: #57c91e;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#btniniciar:hover{
+    background-color: rgb(31, 30, 30);
+}
+
+.nuClicado{
+    border-radius: 10px;
+    outline: none;
+    border: solid 2px #0c3106;
+    background-color: #20f503;
+}
+
+.noClicado{
+    border-radius: 10px;
+    outline: none;
+    border: solid 2px #0c3106;
+    background-color: #20f503;
+}
+
+
+.bodyNu{
+    background-image: url(./imagens/fundo.png);
+    background-size: cover; 
+   
+}
+
+.bodyNo{
+    background-image: url(./imagens/fundo2.png);
+    background-position: center;
+    background-size: contain; 
+    
+}

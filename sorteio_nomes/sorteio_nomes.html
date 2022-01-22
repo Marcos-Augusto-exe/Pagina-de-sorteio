@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./nomes_style.css">
+    <link rel="icon" href="./imagens/trevo_icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&amp;family=Montserrat:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+    <title>Sorteio de Nomes</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="sorteio">
+
+            <h1 class="h1">Sorteio de Nomes</h1>
+
+            <p id="p">Insira os nomes dos participantes do sorteio</p>
+            <div id="content">
+                <input id="nomes" type="text" placeholder='Exemplo: "Joao"' autocapitalize="">
+                <button id="add"><img id="iconAdd" src="./imagens/add.png" alt="icon"></button>
+            </div>
+            <button id="sortear">Sortear</button>
+
+        </div>
+
+        <div id="janelaSorteio">
+
+            <p class="p">Parabéns</p>
+            <h1 id="display"></h1>
+            <P class="p">você venceu!!</P>
+            <button id="novoSorteio">Sortear novamente</button>
+            <button id="fechar">X</button>
+        </div>
+        <div id="fundo"></div>
+    
+        <ul id="lista">
+
+        </ul>
+    </div>
+
+
+
+    <script src="./nomes_script.js"></script>
+</body>
+
+</html>

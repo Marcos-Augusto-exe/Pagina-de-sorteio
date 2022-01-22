@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./imagen/fundo.png);
+    background-size: cover; 
+    background-color: black;
+    font-family: 'Montserrat', monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#container{
+    max-width: 490px;
+    min-width: 270px;
+    background-color: #57c91e;
+    border-radius: 10PX;
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.h1{
+    font-size: 45px;
+    
+    font-weight: 400;
+    color: black;
+    margin: 0 auto 20px auto;
+}
+.h2{
+    font-size: 28px;
+    font-weight: 400;
+    color: black;
+    margin: 0 auto 90px auto;
+}
+
+#sorteio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p{
+    color: black;
+    margin-bottom: 6px;
+    font-size: 19px;
+}
+#numero{
+    width: 90%;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+#sortear{
+    width: 60%;
+    font-size: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 2px #1b5c13;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #26851a;
+}
+#sortear:hover{
+    cursor: pointer;
+    background-color: #1e6d14;
+    border: solid 2px #11420b;
+}
+
+.abrir{
+    display: block !important;
+}
+
+#fechar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 33px;
+    font-size: 18px;
+    padding: 2px;
+    outline: none;
+    border-radius: 11px;
+    border: solid 2px #0c3106;
+    background-color: #2c991d;
+}
+#fechar:hover{
+    cursor: pointer;
+    background-color: #1e6d14;
+    border: solid 2px #11420b;
+}
+
+#fundo{
+    display:none ;
+    position: fixed;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#janelaSorteio{
+    display:none ;
+    max-width: 430px;
+    width: 90%;
+    height: 200px;
+    background-color: #9cff6b;
+    background-image: url(./imagen/fundo.png);
+    background-size: cover;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    padding: 15px;
+    padding-top: 35px;
+    border-radius: 12px;
+    text-align: center;
+    z-index: 200;
+}
+#display {
+    margin-top: 20px;
+    font-size: 70px;
+}
+
+#novoSorteio{
+    width: 300px;
+    font-size: 25px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin-top: 15px;
+    border: solid 2px #0c3106;
+    background-color: #2c991d;
+}
+#novoSorteio:hover{
+    cursor: pointer;
+    background-color: #1e6d14;
+    border: solid 2px #11420b;
+}
+
+
