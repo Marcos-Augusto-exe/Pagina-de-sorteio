@@ -1,5 +1,5 @@
 var posicao = 0;
-const nomesParaSorteio = [];
+let nomesParaSorteio = [];
 let input = document.getElementById("nomes");
 let btnSortear = document.getElementById("sortear");
 let btnAdd = document.getElementById("add");
@@ -37,7 +37,7 @@ function criarLi(){
     let btn = document.createElement('button');
     btn.innerHTML = "x";
     btn.classList.add("btnLi")
-    btn.setAttribute("onclick","excluirTarefa("+posicao+",this)")
+    btn.setAttribute("onclick",`excluirTarefa('${input.value}',this)`)
     posicao ++;
     
     li.appendChild(btn);
@@ -61,7 +61,7 @@ function sortear (){
 
 function excluirTarefa(pos, posItem){
 
-        nomesParaSorteio.splice(pos,1);
+        nomesParaSorteio = nomesParaSorteio.filter(task => task != pos);
 
     let x = posItem.parentNode;
     console.log("item a ser excluído");
